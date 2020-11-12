@@ -23,19 +23,20 @@ namespace Banco
             }
 
             // Instanciar struct
-            Conta n = new Conta(numero, titular, deposito);
-            Console.WriteLine("\n" + n + "\n");
+            Conta x = new Conta(numero, titular, deposito);
+            Console.WriteLine("\n" + x + "\n");
 
             // Realizar depósito
             Console.Write("Entre com um valor para depósito: ");
-            n.Deposito(double.Parse(Console.ReadLine()));
-            Console.WriteLine(n + "\n");
+            x.Deposito(double.Parse(Console.ReadLine()));
+            Console.WriteLine(x + "\n");
 
             // Realizar saque
             Console.Write("Entre com um valor para saque: ");
-            n.Saque(double.Parse(Console.ReadLine()));
-            Console.WriteLine(n);
+            x.Saque(double.Parse(Console.ReadLine()));
+            Console.WriteLine(x);
 
+            // utilzar a vírgula para entrar com os dados
             Console.ReadKey();
         }
     }
